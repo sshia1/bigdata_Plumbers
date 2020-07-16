@@ -14,7 +14,7 @@ import scala.util
 import scala.collection.mutable.Map
 
 object mapreducetest {
-  var text_filename            = "/home/field/Downloads/temp.txt"
+  var text_filename            = "/home/field/Downloads/Shakespeare.txt"
   var data_source              = ArrayBuffer[String]()
   var record_stream            = ArrayBuffer[(Int,String)]()
   var intermediate_data        = ArrayBuffer[(String,Int)]()
@@ -104,16 +104,19 @@ object mapreducetest {
       //map.updateWith("a")({ case Some(count) => Some(count + 1) case None => Some(1) })
       key=sorted_intermediate_data(i)._1
       value=sorted_intermediate_data(i)._2
-      println(final_data.contains(key))
+      // println(final_data.contains(key))
       contain = final_data.contains(key)
+
       if (contain) {
-        println("contain")
+        final_data(key) += value
       }
       else {
-        final_data = final_data + Map[String,Int](key->value)
+        final_data(key) = value
       }
-
-
+    }
+    println("FINAL_DATA PRINTOUT:")
+    final_data.keys.foreach { key =>
+      println(key + "," + final_data(key))
     }
   }
 }
