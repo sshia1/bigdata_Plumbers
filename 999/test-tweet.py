@@ -7,10 +7,7 @@ from tweepy import Stream
   
 # assign the values accordingly 
 
-consumer_key        = "wJsFsQw84oZPOYFBhm79tqxpn" 
-consumer_secret     = "WBBswNrbiknyJHT3k3wbNiBQ0p1NIidUZ0pnQAHlZ9SI6lSd63" 
-access_token        = "1281254230268002306-wKACT10xkkpfz6tzBLviR2C2IZOM1V" 
-access_token_secret = "SboVyteQ7NiKw4JYWnhbdb3LdSKSaml21dxkgDCadUOr7"
+
   
 # authorization of consumer key and consumer secret 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 

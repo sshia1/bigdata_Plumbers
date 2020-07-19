@@ -8,10 +8,10 @@ except ImportError:
 import tweepy
 
 # Variables that contains the user credentials to access Twitter API 
-ACCESS_TOKEN    = "1281254230268002306-wKACT10xkkpfz6tzBLviR2C2IZOM1V"
-ACCESS_SECRET   = "SboVyteQ7NiKw4JYWnhbdb3LdSKSaml21dxkgDCadUOr7"
-CONSUMER_KEY    = "wJsFsQw84oZPOYFBhm79tqxpn"
-CONSUMER_SECRET = "WBBswNrbiknyJHT3k3wbNiBQ0p1NIidUZ0pnQAHlZ9SI6lSd63"
+ACCESS_TOKEN    = 
+ACCESS_SECRET   = 
+CONSUMER_KEY    = 
+CONSUMER_SECRET = 
 
 # Setup tweepy to authenticate with Twitter credentials:
 
