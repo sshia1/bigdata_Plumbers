@@ -1,0 +1,29 @@
+PROJECT TITLE
+  COVID-19 Global Pipeline (CGP)
+
+START OF PROJECT
+  July 16, 2020
+
+DURATION
+  Variable.  On going.
+
+ABSTRACT
+  The ADD describes the design and design rationale of the COVID-19 global data pipeline (CGP).  It will be updated over time.
+
+KEYWORDS
+  COVID-19, Spark, Hadoop, Kafka, ZooKeeper, global epidemic, Corona virus
+
+EXEC SUMMARY
+  As of July 15, 2020, COVID-19 global epidemic has claimed over half a million lives with global infection count exceeding 13,000,000 people.  
+  COVID-19 Global Pipeline (CGP) was designed to provide timely statistics on state of COVID-19 epidemic both on global and local 
+  basis.
+  
+  Core of CGP is Kafka Hadoop Integration (KHI) framework with the data source backend being provided by COVID-19 API posted at rapidapi.com
+  
+  COVID-19 API is supported by well known sports statistic API provider api-sports.
+  
+  COVID-19 API provides free global COVID-19 statistics that can be filtered by countries as well as by date.  API latency is 113ms
+  with success rate of 100% (0% downtime as of July, 2020).  Real time data is regularly updated every 15 minutes by api-sports
+  
+  Current intent is to connect KHI (Kafka Hadoop Integration) with Spark framework as a starting point for further processing, including
+  non-parametric modeling for possible forward prediction of global as well as local epidemiological data.

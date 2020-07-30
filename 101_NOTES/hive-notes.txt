@@ -1,1 +1,182 @@
-Notes on Hive
+# Notes on Hive, including installation (standalone)
+
+RESOURCES/LINKS:
+
+https://phoenixnap.com/kb/install-hive-on-ubuntu
+
+
+NOTES:
+  If you get strange behavior, stop all Hive+Hadoop processes, including reformatting HDFS partition.
+
+  RESTART ALL!
+
+  DELETE/MOVE/BACKUP metastore_db directory in USE!
+
+
+INSTRUCTIONS:
+Install Apache Hive on Ubuntu
+
+
+To configure Apache Hive, first you need to download and unzip Hive. Then you need to customize the following files and settings:
+
+
+******** NEED TO HAVE HADOOP INSTALLED AND HDFS RUNNING! *****************
+
+Edit .bashrc file
+Edit hive-config.sh file
+Create Hive directories in HDFS
+Configure hive-site.xml file
+Initiate Derby database
+Start hive server process in one window and start hive client process in a different window!
+
+
+
+Step 1: Download and Untar Hive
+Visit the Apache Hive official download page and determine which Hive version is best suited for your Hadoop edition. Once you establish which version you need, select the Download a Release Now! option.
+
+
+The online Hive directory allows you to select the required Hive version to download.
+Select the apache-hive-3.1.2-bin.tar.gz file to begin the download process.
+
+Select the Hive 3.2.1 tar file for download.
+
+wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
+
+
+tar xzf apache-hive-3.1.2-bin.tar.gz
+The Hive binary files are now located in the apache-hive-3.1.2-bin directory.
+
+Location of uncommpressed Hive directory.
+Step 2: Configure Hive Environment Variables (bashrc)
+The $HIVE_HOME environment variable needs to direct the client shell to the apache-hive-3.1.2-bin directory. Edit the .bashrc shell configuration file using a text editor of your choice (we will be using nano):
+
+sudo nano .bash_profile
+Append the following Hive environment variables to the .bashrc file:
+
+export HIVE_HOME= “home/hdoop/apache-hive-3.1.2-bin”
+export PATH=$PATH:$HIVE_HOME/bin
+The Hadoop environment variables are located within the same file.
+
+Hive environment variables located in the .bash_profile
+Save and exit the .bashrc file once you add the Hive variables. Apply the changes to the current environment with the following command:
+
+source ~/.bash_profile
+
+
+Step 3: Edit hive-config.sh file
+Apache Hive needs to be able to interact with the Hadoop Distributed File System. 
+
+Access the hive-config.sh file using the previously created $HIVE_HOME variable:
+
+sudo nano $HIVE_HOME/bin/hive-config.sh
+
+
+Note: The hive-config.sh file is in the bin directory within your Hive installation directory.
+
+Add the HADOOP_HOME variable and the full path to your Hadoop directory:
+
+export HADOOP_HOME=/home/hdoop/hadoop-3.2.1
+
+
+Add the hadoop_home variable to the Hive configuration file.
+Save the edits and exit the hive-config.sh file.
+
+
+
+
+
+Step 4: Create Hive Directories in HDFS
+Create two separate directories to store data in the HDFS layer:
+
+
+
+hdfs dfs -mkdir /tmp
+hdfs dfs -chmod g+w /tmp
+hdfs dfs -ls /
+hdfs dfs -mkdir -p /user/hive/warehouse
+hdfs dfs -chmod g+w /user/hive/warehouse
+hdfs dfs -ls /user/hive
+
+
+
+
+Step 5: Configure hive-site.xml File (Optional)
+Apache Hive distributions contain template configuration files by default. The template files are located within the Hive conf directory and outline default Hive settings.
+
+Use the following command to locate the correct file:
+
+cd $HIVE_HOME/conf
+List the files contained in the folder using the ls command.
+
+Contents of the Hive configuration directory.
+Use the hive-default.xml.template to create the hive-site.xml file:
+
+cp hive-default.xml.template hive-site.xml
+Access the hive-site.xml file using the nano text editor:
+
+sudo nano hive-site.xml
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:;databaseName=/home/field/opt/hive-2.3.5/metastore_db;create=true</value>
+        <description>JDBC connect string for a JDBC metastore.</description>
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+        <description>location of default database for the warehouse</description>
+    </property>
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://localhost:9083</value>
+        <description>Thrift URI for the remote metastore.</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+        <description>Driver class name for a JDBC metastore</description>
+    </property>
+    <property>
+        <name>javax.jdo.PersistenceManagerFactoryClass</name>
+        <value>org.datanucleus.api.jdo.JDOPersistenceManagerFactory</value>
+        <description>class implementing the jdo persistence</description>
+    </property>
+    <property>
+        <name>hive.server2.enable.doAs</name>
+        <value>false</value>
+    </property>
+</configuration>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Note: The hive-site.xml file controls every aspect of Hive operations. The number of available advanced settings can be overwhelming and highly specific. Consult the official Hive Configuration Documentation regularly when customizing Hive and Hive Metastore settings.
+
+
+
+Using Hive in a stand-alone mode rather than in a real-life Apache Hadoop cluster is a safe option for newcomers. You can configure the system to use your local storage rather than the HDFS layer by setting the hive.metastore.warehouse.dir parameter value to the location of your Hive warehouse directory.
+
+
+
+
+Defining warehouse location in hive-site.xml file.
+
+
+
+
+Step 6: Initiate Derby Database
+Apache Hive uses the Derby database to store metadata. Initiate the Derby database, from the Hive bin directory using the schematool command:
+
+schematool –initSchema –dbType derby
+hive --service metastore
+
+CREATE NEW TERMINAL
+hive <= 2nd hive process (client) in NEW TERMINAL!
+
+
+The schematool command has initiated the Derby database.
+
+
+
+Derby is the default metadata store for Hive. If you plan to use a different database solution, such as MySQL or PostgreSQL, you can specify a database type in the hive-site.xml file.

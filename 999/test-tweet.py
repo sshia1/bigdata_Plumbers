@@ -7,7 +7,6 @@ from tweepy import Stream
   
 # assign the values accordingly 
 
-
   
 # authorization of consumer key and consumer secret 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 

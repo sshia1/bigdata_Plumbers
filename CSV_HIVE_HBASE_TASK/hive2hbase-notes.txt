@@ -1,0 +1,45 @@
+#hive to hbase notes
+
+
+RESOURCES/LINKS:
+
+
+
+HIVE COMMANDS:
+
+hive> create table hbase_hr(EmpID string,DeptID string,Salary string,StartDate string,Manager string,DeptName string) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' WITH SERDEPROPERTIES("hbase.columns.mapping"=":key,employees:DeptID,employees:Salary,employees:StartDate,employees:Manager,employees:DeptName") TBLPROPERTIES("hbase.table.name"="hr_hbase","hbase.mapred.output.outputtable"="hr_hbase");
+
+
+
+hive> create table hbase_employee(ID string,First_name string,Last_name string,Address string,City string,Phone string,Email string) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' WITH SERDEPROPERTIES("hbase.columns.mapping"=":key,personnel:First_name,personnel:Last_name,personnel:Address,personnel:City,personnel:Phone,personnel:Email") TBLPROPERTIES("hbase.table.name"="employee_hbase","hbase.mapred.output.outputtable"="employee_hbase");
+
+
+hive> INSERT INTO TABLE hbase_hr SELECT * FROM hr;
+
+
+hive> INSERT INTO TABLE hbase_employee SELECT * FROM employee;
+
+
+HBASE COMMANDS:
+
+
+hbase(main):006:0> list
+TABLE                                                                                                                                                                   
+employee_hbase                                                                                                                                                          
+hr_hbase                                                                                                                                                                
+2 row(s)
+Took 0.0207 seconds                                                                                                                                                     
+=> ["employee_hbase", "hr_hbase"]
+hbase(main):007:0> scan 'hr_hbase'
+ROW                                         COLUMN+CELL                                                                                                                 
+ 134841                                     column=employees:DeptID, timestamp=2020-07-30T20:38:42.468Z, value=200                                                      
+ 134841                                     column=employees:DeptName, timestamp=2020-07-30T20:38:42.468Z, value=Sales                                                  
+ 134841                                     column=employees:Manager, timestamp=2020-07-30T20:38:42.468Z, value=drbrown                                                 
+ 134841                                     column=employees:Salary, timestamp=2020-07-30T20:38:42.468Z, value=50000                                                    
+ 134841                                     column=employees:StartDate, timestamp=2020-07-30T20:38:42.468Z, value=7/17/2013                                             
+
+
+hbase(main):010:0> scan 'employee_hbase'
+ROW                                         COLUMN+CELL                                                                                                                 
+ 134841                                     column=personnel:Address, timestamp=2020-07-30T20:39:20.568Z, value=071 Farmco Pass                                         
+

@@ -1,0 +1,53 @@
+DAILY LOG
+
+- week 1: 06/30/2020-07/03/2020
+  TASK: UBUNTU, JAVA, PYTHON, SCALA, SBT, PyCharm, Python WordCount, 
+  DONE:
+  PENDING:
+- week 2: 07/06/2020-07/10/2020
+  TASK:
+  DONE:
+  PENDING:
+- 07/13/2020 (Mon):
+  TASK: Scrum Master, sqoop
+  DONE:
+  PENDING:
+- 07/14/2020 (Tue):
+  TASK: previous+flume/twitter, kafka install
+  DONE:
+  PENDING:
+- 07/15/2020 (Wed):
+  TASK: Java WordCount, Scala WordCount, Python/Kafka producer/consumer process, 
+        flume/twitter process, sqoop SQL import
+  DONE: java, scala wordcount, started on python/kafka/producer program
+  PENDING: Thu(flume/twitter, mult cluster, sqoop SQL import)
+- 07/16/2020 (Thu):
+  Task –
+  Progress –
+  Completion % -
+  Issues –
+  Pending Items -
+  Actions to be taken –
+  Will Hit Deadline -
+  Deadline -
+  TASK:
+  DONE:
+  PENDING:
+- 07/17/2020 (Fri):
+  TASK:
+  DONE:
+  PENDING:
+
+
+BULLET POINTS
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+

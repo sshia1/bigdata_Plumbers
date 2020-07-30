@@ -1,0 +1,1000 @@
+   36  ls /w
+   37  ls -l
+   38  idea.sh
+   39  .\idea.sh
+   40  ./idea.sh
+   41  cd Downloads
+   42  ls -l
+   43  sudo tar -xzf jdk-8u251-linux-i586.tar.gz  -C /opt
+   44  ls -w
+   45  ls --help
+   46  ls -w
+   47  ls --help
+   48  ls -l
+   49  sudo tar -xzf jdk-8u251-linux-i586.tar.gz  -C /opt
+   50  ls -l
+   51  cd
+   52  ls
+   53  mkdir opt
+   54  ls -l
+   55  cd Downloads
+   56  ls -l
+   57  mv jdk-8u251-linux-i586.tar.gz ../opt
+   58  cd ../opt
+   59  ls -l
+   60  sudo tar -xzf jdk-8u251-linux-i586.tar.gz  
+   61  ls -l
+   62  cd jdk1.8.0_251/
+   63  ls -l
+   64  python --version
+   65  python -version
+   66  python3 -version
+   67  python3
+   68  python3 -version
+   69  python3 -h
+   70  python3 -V
+   71  java -V
+   72  cd ..
+   73  cd Downloads
+   74  ls
+   75  installsbt
+   76  installsbt.sh
+   77  shell installsbt.sh
+   78  type installsbt.sh
+   79  cat installsbt.sh
+   80  installsbt.sh
+   81  ./installsbt.sh
+   82  chmod +x installsbt.sh
+   83  ./installsbt.sh
+   84  ls
+   85  echo $ORACLE_HOME
+   86  date
+   87  TZ=GMT date
+   88  date
+   89  date -d now
+   90  date
+   91  date -d yesterday
+   92  date
+   93  date -d tomorrow
+   94  date
+   95  date -d now
+   96  date
+   97  df
+   98  df -h
+   99  whatis whatis
+  100  whatis df
+  101  free
+  102  whatis free
+  103  ps
+  104  whatis ps
+  105  uptime
+  106  whatis uptime
+  107  w
+  108  whatis w
+  109  w
+  110  password
+  111  whatis password
+  112  passwd
+  113  whatis exit
+  114  exit
+  115  whatis shutdown
+  116  mkdir
+  117  mdir --help
+  118  mkdir --help | more
+  119  whatis more
+  120  rmdir
+  121  rmdir --help
+  122  rm
+  123  rm --help
+  124  whatis rm
+  125  mv
+  126  mv --help
+  127  whatis mv
+  128  cp
+  129  cp --help
+  130  whatis cp
+  131  cat
+  132  clear
+  133  echo "t1" > t1.txt
+  134  cat t1.txt
+  135  echo "t2" > t2.txt
+  136  cat t2.txt
+  137  cat t1.txt t2.txt
+  138  echo "1 2 3" t3.txt
+  139  cat t3.txt
+  140  echo "1 2 3" > t3.txt
+  141  cat t3.txt
+  142  tac t3.txt
+  143  cat t1.txt t2.txt
+  144  tac t1.txt t2.txt
+  145  tac t1.txt t2.txt t3.txt
+  146  cat t1.txt t2.txt t3.txt
+  147  help tac
+  148  whatis tac
+  149  tac --help
+  150  grep "1" t3.txt
+  151  zip t.zip t1.txt t2.txt t3.txt
+  152  ls
+  153  unzip t.zip
+  154  sudo
+  155  sudo --help
+  156  sudo --help | more
+  157  sudo -i
+  158  head -1 t3.txt
+  159  tail -1 t3.txt
+  160  history
+  161  history | more
+  162  help
+  163  help | more
+  164  man vim
+  165  dir
+  166  ls
+  167  ls -ltr
+  168  cd
+  169  cd .
+  170  cd ~
+  171  cd ..
+  172  ls
+  173  cd field
+  174  ls
+  175  cd $HOME
+  176  pwd
+  177  clear
+  178  whereis
+  179  whereis whereis
+  180  whereis zip
+  181  hep
+  182  help
+  183  whreeis help
+  184  whereis cat
+  185  whatis whatis
+  186  whatis cat
+  187  whatis help
+  188  whatis zip
+  189  shutdown --help
+  190  shutdown
+  191  shutdown -c
+  192  shutdown -H
+  193  history
+  194  history | more
+  195  dir
+  196  ls
+  197  dir
+  198  cd Downloads
+  199  dir
+  200  ls
+  201  sudo gedit test.txt
+  202  vi test.txt
+  203  clear
+  204  alias
+  205  alias --help
+  206  clear
+  207  dir
+  208  cd ..
+  209  dir
+  210  cd opt
+  211  dir
+  212  rm -rf *.*
+  213  dir
+  214  https://javadl.oracle.com/webapps/download/AutoDL?BundleId=239835_230deb18db3e4014bb8e3e8324f81b43
+  215  sudo wget https://javadl.oracle.com/webapps/download/AutoDL?BundleId=239835_230deb18db3e4014bb8e3e8324f81b43
+  216  dir
+  217  ls
+  218  cd jdk1.8.0_251/
+  219  dir
+  220  cd ..
+  221  ls
+  222  dir
+  223  cd ..
+  224  sudo gedit .bash_profile 
+  225  source .bash_profile
+  226  java -version
+  227  ls
+  228  sudo gedit .bash_profile 
+  229  source  .bash_profile
+  230  java -version
+  231  sudo gedit .bash_profile 
+  232  source  .bash_profile
+  233  java -version
+  234  sudo gedit .bash_profile 
+  235  source  .bash_profile
+  236  sudo gedit .bash_profile 
+  237  java -version
+  238  cd opt/jdk1.8.0_251/
+  239  ls
+  240  ls bin
+  241  ls jre
+  242  ls lib
+  243  ls man
+  244  dir
+  245  pwd
+  246  cd
+  247  cd opt/jdk1.8.0_251/
+  248  pwd
+  249  cd
+  250  source .bash_profile 
+  251  java -version 
+  252  whereis jaca
+  253  whereis java
+  254  cd /usr/share/java
+  255  dir
+  256  rm *.*
+  257  sudo rm *.*
+  258  ls
+  259  cd ..
+  260  rmdir java
+  261  sudo rmdir java
+  262  ls
+  263  cd java
+  264  cd ~
+  265  cd opt
+  266  cd ..
+  267  java -version
+  268  path
+  269  echo $PATH
+  270  source .bash_profile
+  271  java -version
+  272  whereis java
+  273  source .bash_profile
+  274  java -version
+  275  cd opt/
+  276  ls 
+  277  rm AutoDL\?BundleId\=239835_230deb18db3e4014bb8e3e8324f81b43 
+  278  ls 
+  279  cd jdk1.8.0_251/
+  280  ls 
+  281  cdd 
+  282  cd
+  283  gedit .bash_profile 
+  284  sudo gedit .bash_profile 
+  285  source .bash_profile 
+  286  java -version
+  287  reboot
+  288  cd opt
+  289  ls
+  290  cd scala-2.11.8/
+  291  pwd
+  292  sudo apt-get update
+  293  sudo apt-get install git-core
+  294  git status
+  295  git config --global user.name "sshia1"
+  296  git config --global user.email "sshia1@outlook.com"
+  297  git config list
+  298  ssh-keygen -C "sshia1@outlook.com"
+  299  ssh-add
+  300  cd Documents
+  301  ls
+  302  ls -l
+  303  git -clone "https://github.com/sshia1/bigdata_Plumbers"
+  304  git clone "https://github.com/sshia1/bigdata_Plumbers"
+  305  ls -a
+  306  cd bigdata_Plumbers/
+  307  ls -a
+  308  cd ..
+  309  cd abc/
+  310  cd bigdata_Plumbers
+  311  ls
+  312  sudo gedit readme.txt
+  313  ls
+  314  cat readme.txt
+  315  ls
+  316  git add .
+  317  git commit -m "readme file"
+  318  git push origin master
+  319  la -a
+  320  mkdir 001_installation
+  321  mkdir 002_wordCount
+  322  git add .
+  323  git commit -m "update"
+  324  git push origin master
+  325  la -a
+  326  cd 002_wordCount
+  327  jps
+  328  git add .
+  329  git commit -m "update"
+  330  git push origin master
+  331  cd ..
+  332  cd 001_installation
+  333  echo "Readme" > readme.txt
+  334  cd ..
+  335  cd..
+  336  cd ..
+  337  ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+  338  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  339  chmod 0600 ~/.ssh/authorized_keys
+  340  wget http://mirror.cc.columbia.edu/pub/software/apache/hadoop/common/hadoop-3.1.3/hadoop-3.1.3.tar.gz
+  341  tar xzf hadoop-3.1.3.tar.gz 
+  342  ls
+  343  rm hadoop-3.1.3.tar.gz
+  344  cd hadoop-3.1.3/
+  345  pwd
+  346  cd etc
+  347  ls
+  348  cd hadoop
+  349  ls
+  350  sudo gedit hadoop-env.sh
+  351  sudo gedit core-site.xml 
+  352  sudo gedit mapred-site.xml
+  353  sudo gedit hdfs-site.xml 
+  354  sudo gedit .bash_profile
+  355  ls
+  356  gedit .bash_profile
+  357  source .bash_profile
+  358  hdfs namenode -format
+  359  source .bash_profile
+  360  hdfs namenode -format
+  361  ecoh $HADOOP_YARN_HOME
+  362  echo $HADOOP_YARN_HOME
+  363  set
+  364  set | more
+  365  hdfs namenode -format
+  366  cd opt
+  367  cd hadoop-3.1.3/
+  368  cd etc
+  369  cd hadoop
+  370  grep "HADOOP_YARN_HOME"
+  371  grep "HADOOP_YARN_HOME"*.*
+  372  grep HADOOP_YARN_HOME .
+  373  grep HADOOP_YARN_HOME *.*
+  374  cd ..
+  375  grep -r "HADOOP_YARN_HOME" *.*
+  376  grep -help
+  377  grep --help
+  378  grep -r "HADOOP_YARN_HOME" *.*
+  379  grep  "HADOOP_YARN_HOME" *.*
+  380  ls
+  381  cd etc
+  382  ls
+  383  cd hadoop
+  384  grep "HADOOP_YARN_HOME" *.*
+  385  echo $HADOOP_MAPRED_HOME
+  386  set HADOOP_YARN_HOME=$HADOOP_MAPRED_HOME
+  387  cd ..
+  388  hdfs namenode -format
+  389  echo $HADOOP_YARN_HOME
+  390  cd opt
+  391  ls
+  392  cd hadoop-3.1.3/
+  393  ls
+  394  cd etc
+  395  cd hadoop
+  396  ls
+  397  cd ..
+  398  ls
+  399  cd hdfs
+  400  cd namenode
+  401  pwd
+  402  cd ..
+  403  ls
+  404  cd ..
+  405  cd etc
+  406  ls
+  407  cd hadoop
+  408  ls
+  409  sudo edit yarn-site.xml
+  410  sudo gedit yarn-site.xml
+  411  cd ..
+  412  ls
+  413  source .bash_profile
+  414  hdfs namenode -format
+  415  ls
+  416  cd opt
+  417  cd hadoop-3.1.3/
+  418  cd hdfs
+  419  ls
+  420  cd ..
+  421  ls
+  422  cd ..
+  423  hdfs namenode -format
+  424  source .bash_profile
+  425  hdfs namenode -format
+  426  path
+  427  echo $PATH
+  428  cat .bash_profile
+  429  sudo gedit .bash_profile
+  430  source .bash_profile
+  431  path
+  432  echo $PATH
+  433  hdfs namenode -format
+  434  cd opt
+  435  cd hadoop-3.1.3/
+  436  cd etc
+  437  cd hadoop
+  438  ls
+  439  sudo gedit yarn-site.xml
+  440  ls
+  441  cat core-site.xml
+  442  cd ..
+  443  cd ~
+  444  hdfs namenode -format
+  445  ls
+  446  cd opt/hadoop-3.1.3/
+  447  cd etc/hadoop
+  448  ls
+  449  cat yarn-site.xml
+  450  echo $PATH
+  451  cd ..
+  452  source .bash_profile
+  453  hdfs namenode -format
+  454  cd opt/hadoop-3.1.3/etc/hadoop
+  455  ls
+  456  cat yarn-en.sh
+  457  cat yarn-env.sh
+  458  ls
+  459  mv hadoop-3.1.3/ opt
+  460  cd opt
+  461  ls
+  462  cd hadoop-3.1.3/
+  463  mkdir hdfs
+  464  cd hdfs
+  465  ls
+  466  mkdir namenode
+  467  mkdir datanode
+  468  ls
+  469  cd ..
+  470  cd hadoop
+  471  ls
+  472  cd etc
+  473  ls
+  474  cd hadoop
+  475  sudo gedit hdfs-site.xml
+  476  sudo gedit download_hadoop.sh
+  477  ls
+  478  download_hadoop
+  479  download_hadoop.sh
+  480  source download_hadoop.sh
+  481  ls
+  482  cd opt
+  483  ls
+  484  rm -rf hadoop-3.1.3/
+  485  ls
+  486  mv ../hadoop-3.1.3.tar.gz .
+  487  ls
+  488  tar xzf hadoop-3.1.3.tar.gz 
+  489  ls
+  490  cd hadoop-3.1.3
+  491  ls
+  492  mkdir hdfs
+  493  cd hdfs
+  494  mkdir namenode
+  495  mkdir datanode
+  496  cd ..
+  497  ls
+  498  cd etc/hadoop
+  499  ls
+  500  sudo gedit hadoop-env.sh
+  501  cd ~
+  502  cat .bash_profile
+  503  cd opt
+  504  cd hadoop-3.1.3/
+  505  cd etc/hadoop
+  506  sudo gedit hadoop-env.sh
+  507  cd ..
+  508  pwd
+  509  cd etc/hadoop
+  510  sudo gedit mapred-site.xml
+  511  cd etc/hadoop
+  512  ls
+  513  sudo gedit yarn-site.xml
+  514  cat hdfs-site.xml
+  515  ls
+  516  cat hdfs-site.xml 
+  517  sudo gedit hdfs-site.xml 
+  518  cat hadoop_env.sh
+  519  cat hadoop-env.sh
+  520  cd ~
+  521  ls
+  522  cat .bash_profile
+  523  source .bash_profile
+  524  hdfs namenode -format
+  525  start-all.sh
+  526  jps
+  527  cd opt
+  528  cd hadoop-3.1.3/
+  529  ls
+  530  cd hdfs
+  531  ls
+  532  ls datanode
+  533  ls namenode
+  534  cd ..
+  535  cd etc/hadoop
+  536  ls
+  537  cat core-site.xml
+  538  history | more
+  539  cd ~
+  540  cd Documents
+  541  ls
+  542  cd bigdata_Plumbers/
+  543  ls
+  544  history | more
+  545  cd opt
+  546  ls
+  547  cd Python-3.8.3
+  548  source .bash_profile
+  549  path
+  550  echo $PYTHON_HOME
+  551  cd ..
+  552  source .bash_profile
+  553  cat .bash_profile
+  554  echo $PYTHON_HOME
+  555  ls
+  556  cd Downloads
+  557  ls
+  558  pwd
+  559  mv 'hr - hr.csv' hr-hr.csv
+  560  ls
+  561  cd/
+  562  cd .
+  563  cd ..
+  564  cd /etc/my.cnf
+  565  /usr/bin
+  566  cd /usr/bin/mysql
+  567  ls
+  568  cd etc
+  569  cd mysql
+  570  ls
+  571  sudo gedit mysql.cnf
+  572  sudo gedit my.cnf
+  573  pwd
+  574  ls
+  575  mv hr-hr.csv hr-hr.csv.bak
+  576  mv 'hr - hr.csv' hr-hr.csv
+  577  cat hr-hr.csv | more
+  578  ls *.csv
+  579  ls
+  580  ls -l
+  581  ls
+  582  cd ..
+  583  ls
+  584  cd Documents
+  585  ls
+  586  cd ..
+  587  ls
+  588  cd Downloads
+  589  ls
+  590  cat Employees.csv | more
+  591  ls -l
+  592  ls
+  593  mv 'db_plumbers - employee.csv' db_plumbers-employee.csv
+  594  mv 'db_plumbers - hr.csv' db_plumbers-hr.csv
+  595  ls
+  596  cd ..
+  597  ls
+  598  la -a
+  599  cd Downloads
+  600  ls
+  601  exit
+  602  cd opt/hadoop-3.1.3/
+  603  pwd
+  604  cd ..
+  605  ls
+  606  cd jdk1.8.0_221
+  607  pwd
+  608  cd ~
+  609  java -version
+  610  cd opt
+  611  cd hadoop-3.1.3/
+  612  cd etc/hadoop
+  613  ls
+  614  sudo gedit core-site.xml
+  615  sudo gedit hdfs-site.xml
+  616  ls
+  617  cd ..
+  618  ls
+  619  cd hdfs
+  620  ls
+  621  cd $HOME
+  622  sudo apt update
+  623  sudo apt install software-properties-common
+  624  sudo add-apt-repository ppa:deadsnakes/ppa
+  625  sudo apt install python3.7
+  626  python3.7 --version
+  627  cat .bash_profile
+  628  la -a
+  629  cd Downloads
+  630  ls
+  631  cd ..
+  632  cd opt
+  633  ls
+  634  cd ..
+  635  ls
+  636  path
+  637  echo $PATH
+  638  python3.7
+  639  whereis python3.8
+  640  whereis python3.7
+  641  jps
+  642  source .bash_profile
+  643  start-all.sh
+  644  jps
+  645  hdfs dfs -mkdir /temp
+  646  hdfs dfs -ls /
+  647  cd Documents/
+  648  ls
+  649  echo "test" > test.txt
+  650  ls
+  651  mv test.txt test1.txt
+  652  hdfs dfs -put test1.txt /temp
+  653  cd opt/hadoop-3.1.3/
+  654  cd lib
+  655  ls
+  656  cd ../opt/hadoop-3.1.3
+  657  cd lib
+  658  ls
+  659  cd $HOME/Documents
+  660  hdfs dfs -put test1.txt /temp1
+  661  hdfs dfs -ls /temp
+  662  hdfs dfs -cat /temp/test1.txt
+  663  cd $HOME/Downloads
+  664  ls *.txt
+  665  ls
+  666  cd ..
+  667  ls
+  668  cd Documents
+  669  ls
+  670  cd ..
+  671  cd Downloads
+  672  ls
+  673  cd ..
+  674  ls
+  675  cd Documents
+  676  ls
+  677  cd ..
+  678  cd Downloads
+  679  ls
+  680  hdfs dfs -ls
+  681  hdfs dfs -ls /
+  682  hdfs dfs -ls /temp
+  683  hdfs dfs -ls /temp1
+  684  hdfs dfs -ls /
+  685  hdfs dfs -mkdir /temp2
+  686  hdfs dfs -ls /
+  687  hdfs dfs -mv Shakespeare.txt /temp2
+  688  ls *.txt
+  689  hdfs dfs -put Shakespeare.txt /temp2
+  690  hdfs dfs -ls /temp2
+  691  hdfs dfs -ls /
+  692  source .bash_profile
+  693  start-all.sh
+  694  start
+  695  cd ..
+  696  start
+  697  start-yarn.sh
+  698  start-dfs.sh
+  699  jps
+  700  start-yarn.cmd
+  701  whereis start-yarn.cmd
+  702  pip install --upgrade pip
+  703  pip3 install --upgrade pip
+  704  sudo apt install python3-pip
+  705  pip3 install --upgrade pip
+  706  pip3 install --upgrade -r requirements.txt
+  707  cat .bash_profile
+  708  python
+  709  python3
+  710  whereis python3
+  711  cd /usr/bin/python3
+  712  cd /usr/bin
+  713  ls
+  714  ls python*.*
+  715  cd/$HOME
+  716  cd /$HOME
+  717  cat .bash_profile
+  718  pip3 install pydoop
+  719  sudo gedit wc.py
+  720  sudo gedit stop.txt
+  721  pydoop script wc.py hdfs_input hdfs_output --upload-file-to-cache stop.txt
+  722  sudo apt-get install build-essential python-dev
+  723  echo $HADOOP_HOME
+  724  python3 setup.py build
+  725  pydoop script wc.py hdfs_input hdfs_output --upload-file-to-cache stop.txt
+  726  pip3 install pydoop
+  727  cd /usr/lib/python3
+  728  ls
+  729  cd dist-packages
+  730  ls
+  731  ls py*.*
+  732  ls
+  733  ls | more
+  734  ls
+  735  pip3 install pydoop
+  736  whereis python3
+  737  cat .bash_profile
+  738  sudo apt-get install build-essential checkinstall
+  739  sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev     libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+  740  cd opt
+  741  sudo wget https://www.python.org/ftp/python/3.8.3/Python-3.8.3.tgz
+  742  sudo tar xzf Python-3.8.3.tgz 
+  743  ls
+  744  cd Python-3.8.3/
+  745  sudo ./Configure --enable-optimizations
+  746  sudo ./configure --enable-optimizations
+  747  sudo make altinstall
+  748  python 3.8 -V
+  749  python3.8 -V
+  750  cd ..
+  751  ls
+  752  rm Python-3.8.3.tgz
+  753  ls
+  754  cd ..
+  755  cat .bash_profile
+  756  sudo gedit .bash_profile
+  757  cat .bash_profile
+  758  echo $PYTHON_HOME
+  759  source .bash_profile
+  760  echo $PATH
+  761  python3.8 -V
+  762  pip install mrjob
+  763  pip3 install mrjob
+  764  sudo gedit mr_word_count.y
+  765  ls
+  766  mv mr_word_count.y mr_word_count.py
+  767  ls
+  768  python3.8.3 mr_word_count.py stop.txt
+  769  ls
+  770  cd opt
+  771  ls
+  772  python3.8.3
+  773  cd Python-3.8.3
+  774  cd bin
+  775  ls
+  776  cd ..
+  777  ls
+  778  python3.8 mr_word_count.py stop.txt
+  779  ls
+  780  cd Documents
+  781  ls
+  782  cd ..
+  783  cd Downloads
+  784  ls
+  785  cp Shakespeare.txt ..
+  786  cd ..
+  787  ls
+  788  sudo gedit Shakespeare.txt
+  789  sudo gedit test.txt
+  790  cat test.txt
+  791  ls
+  792  sudo gedit test.py
+  793  python3.8 test.py test.txt
+  794  cat test.txt
+  795  hdfs dfs -put test.txt /temp2
+  796  hdfs dfs -ls /temp2
+  797  hdfs dfs -pwd /temp2
+  798  hdfs dfs -ls /temp2
+  799  python3.8 test.py test.txt
+  800  python3.8 test.py test.txt
+  801  hdfs dfs -ls /temp2
+  802  hdfs dfs -ls 
+  803  pwd
+  804  hdfs dfs -ls /user/field/temp2
+  805  hdfs dfs -ls /
+  806  hadoop fs -ls /
+  807  hadoop fs -ls /field
+  808  hadoop fs -ls hdfs://
+  809  hadoop fs -ls hdfs:///temp2
+  810  hadoop fs -ls hdfs:///temp2/teset.txt
+  811  hadoop fs -ls hdfs:///temp2/test.txt
+  812  python3.8 test.py -r hadoop hdfs:///temp2/test.txt
+  813  hadoop fs -ls hdfs:///temp2/test.txt
+  814  python3.8 test.py test.txt --output-dir hdfs://temp2/test.out
+  815  python3.8 test.py test.txt --output-dir hdfs:///temp2/test.out
+  816  hdfs dfs -ls hdfs:///temp2
+  817  ls
+  818  cat test.py
+  819  python3.8 test.py test.txt 
+  820  cp test.py mapreduce.py
+  821  ls *.txt
+  822  python3.8 mapreduce.py Shakespeare.txt
+  823  python3.8 mapreduce.py Shakespeare.txt > t.out
+  824  cat t.out | more
+  825  sudo apt-get update
+  826  sudo apt-get install mysql server
+  827  sudo apt-get install mysql -server5.7
+  828  sudo apt-get install mysql -server
+  829  cd Downloads
+  830  ls *.odt
+  831  cat 'mySQL server Install.odt' | more
+  832  cd ..
+  833  cd Downloads
+  834  dir *.odt
+  835  clear
+  836  cls
+  837  ls
+  838  sudo apt-get mysql-server
+  839  sudo apt-get install mysql-server
+  840  sudo ufw enable
+  841  sudo ufw allow mysql
+  842  sudo systemctl start mysql
+  843  systemctl status mysql service
+  844  update mysql.user set authentication_string=password('password') where user='root'
+  845  update mysql.user set authentication_string=password('password') where user='root';
+  846  UPDATE mysql.user SET authentication_string=PASSWORD('password') where user='root';
+  847  UPDATE mysql.user SET authentication_string = PASSWORD('password') where user='root';
+  848  UPDATE mysql.user SET authentication_string = PASSWORD('password') where User='root';
+  849  UPDATE mysql.user SET authentication_string = PASSWORD('password') where User = 'root';
+  850  UPDATE mysql.user SET authentication_string = PASSWORD("'password'") where User = 'root';
+  851  UPDATE mysql.user SET authentication_string = "PASSWORD"('password') where User = 'root';
+  852  UPDATE mysql.user SET authentication_string = "PASSWORD(password)" where User = 'root';
+  853  mysql
+  854  /usr/bin/mysql -u root -p
+  855  sudo /usr/bin/mysql -u root -p
+  856  ls
+  857  exit
+  858  ls
+  859  mv "100 Records.csv" hr.csv
+  860  ls
+  861  sudo /usr/bin/mysql -u root -p
+  862  sudo mysql --local-infile=1 -u root -pl
+  863  exit
+  864  ls
+  865  wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
+  866  sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free"
+  867  sudo apt install opera-stable
+  868  ls
+  869  sudo /usr/bin/mysql -u root -p
+  870  mysql --local-infile=1 -u root -p1
+  871  sudo mysql --local-infile=1 -u root -p1
+  872  ls
+  873  cd Documents
+  874  ls
+  875  dir
+  876  ls -l
+  877  cd ..
+  878  cd Documents
+  879  ls
+  880  cd bigdata_Plumbers
+  881  ls
+  882  mkdir 003_MRJOBS_MapReduce
+  883  mkdir 004_MySQL
+  884  mkdir 000_IBM_Certifications
+  885  cd ~/Downloads
+  886  ls
+  887  cp db_plumbers-employee.csv ../Documents/bigdata_Plumbers
+  888  cp db_plumbers-hr.csv ../Documents/bigdata_Plumbers
+  889  cp SQL-solution-John-Shia.odt ../Documents/bigdata_Plumbers
+  890  ls
+  891  cd ..
+  892  ls
+  893  cp mapreduce.py Documents/bigdata_Plumbers
+  894  cp Shakespeare.txt Documents/bigdata_Plumbers
+  895  more < t.out
+  896  ls t.out
+  897  mv t.out mapreduce_output.txt
+  898  mv mapreduce_output.txt Documents/bigdata_Plumber
+  899  ls
+  900  cd Documents
+  901  ls
+  902  cd ..
+  903  ls
+  904  cd Downloads
+  905  ls
+  906  cd ..
+  907  cd Documents
+  908  ls
+  909  cat bigdata_Plumber
+  910  ls
+  911  mv bigdata_Plumber mapreduce_output.txt
+  912  ls
+  913  cat test1.txt
+  914  mv 'IBMDeveloperSkillsNetwork CC0101EN Certificate _ Cognitive Class.pdf' bigdata_Plumbers
+  915  mv 'Cognitive Class BD0101EN Certificate _ Cognitive Class.pdf' bigdata_Plumbers
+  916  ls
+  917  mv mapreduce_output.txt bigdata_Plumbers
+  918  cd bigdata_Plumbers
+  919  ls
+  920  mv 'Cognitive Class BD0101EN Certificate _ Cognitive Class.pdf'  000_IBM_Certifications/
+  921  mv 'IBMDeveloperSkillsNetwork CC0101EN Certificate _ Cognitive Class.pdf' 000_IBM_Certifications/
+  922  ls
+  923  mv db_plumbers-employee.csv 004_MySQL
+  924  mv db_plumbers-hr.csv 004_MySQL
+  925  mv mapreduce.py 003_MRJOBS_MapReduce/
+  926  mv mapreduce_output.txt 003_MRJOBS_MapReduce/
+  927  ls
+  928  mv Shakespeare.txt 003_MRJOBS_MapReduce/
+  929  mv SQL-solution-John-Shia.odt 004_MySQL
+  930  ls
+  931  git add .
+  932  git commit -m "update"
+  933  git push origin master
+  934  history > history.out
+  935  sudo gedit history.out
+  936  ls
+  937  git add 000_IBM_Certifications
+  938  git add 003_MRJOBS_MapReduce/
+  939  git add 002_wordCount/
+  940  git commit -m "update"
+  941  git push
+  942  git pull
+  943  cd 001_installation/readme.txt
+  944  cd 001_installation/
+  945  ls
+  946  cat readme.txt
+  947  del readme.txt
+  948  rm -rf readme.txt
+  949  ls
+  950  cd ..
+  951  git pull
+  952  git add/rm
+  953  git --help
+  954  git merge
+  955  git add 001_installation/
+  956  git pull
+  957  ls
+  958  la -a
+  959  cd 001_installation
+  960  ls
+  961  la -a
+  962  ls
+  963  cd ..
+  964  git add .
+  965  git commit -m "update"
+  966  git push origin master
+  967  cd ..
+  968  sudo apt-get update
+  969  nc 
+  970  nc localhost 9600 -l
+  971  start-all.sh
+  972  jps
+  973  ls
+  974  . hadoopstatus.sh
+  975  sudo gedit hadoopstatus.sh
+  976  . hadoopstatus.sh
+  977  sudo gedit hadoopstatus.sh
+  978  . hadoopstatus.sh
+  979  sudo gedit hadoopstatus.sh
+  980  . hadoopstatus.sh
+  981  cd opt
+  982  cd hadoop
+  983  ls
+  984  cd hadoop-3.1.3
+  985  ls
+  986  cd etc
+  987  ls
+  988  cd hadoop
+  989  ls
+  990  cd ..
+  991  cd bin
+  992  ls
+  993  cd hadoop
+  994  cd ..
+  995  ls
+  996  cd sbin
+  997  ls
+  998  cd ~
+  999  . stop-all.sh
+ 1000  . hadoopstatus.sh
+ 1001  copy hadoopstatus Documents/bigdata_Plumbers
+ 1002  copy hadoopstatus Documents/bigdata_Plumber
+ 1003  cp hadoopstatus.sh Documents/bigdata_Plumber
+ 1004  cd Documents/bigdata_Plumber
+ 1005  cd Documents
+ 1006  ls
+ 1007  mv bigdata_Plumber hadoopstatus.sh
+ 1008  cat hadoopstatus.sh
+ 1009  mv hadoopstatus.sh bigdata_Plumbers
+ 1010  ls
+ 1011  cd bigdata_Plumbers
+ 1012  ls
+ 1013  cp hadoopstatus.sh 100_SCRIPTS/
+ 1014  cp hadoopstatus.sh 005_BASH_CLUSTER_Setup/
+ 1015  ls
+ 1016  cp updategit.sh 100_SCRIPTS/
+ 1017  . updategit.sh
+ 1018  ls
+ 1019  sudo gedit getgit.sh
+ 1020  ls
+ 1021  cp getgit.sh 100_SCRIPTS/
+ 1022  cp *.sh 100_SCRIPTS/
+ 1023  rm download_hadoop.sh 
+ 1024  rm hadoopstatus.sh
+ 1025  ls
+ 1026  cat updategit.sh
+ 1027  . updategit.sh
+ 1028  ls
+ 1029  ls 110_CERTIFICATES/
+ 1030  ls 
+ 1031  . getgit.sh
+ 1032  ls
+ 1033  ls 110_CERTIFICATES/
+ 1034  cd ..
+ 1035  history > history.out

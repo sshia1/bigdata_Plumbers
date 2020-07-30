@@ -14,8 +14,8 @@ consumer = KafkaConsumer (topicName, group_id ='group1',bootstrap_servers = boot
 
 # Read and print message from consumer
 for msg in consumer:
-  print("Topic Name=%s,Message=%s"%(msg.topic,msg.value))
-  time.sleep(1)
+	print("Topic Name=%s,Message=%s"%(msg.topic,msg.value))
+	time.sleep(1)
 
 # Terminate the script
 print("Exiting consumer...")

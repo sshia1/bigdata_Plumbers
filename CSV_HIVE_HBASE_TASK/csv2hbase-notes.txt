@@ -1,0 +1,26 @@
+# csv to hive notes
+
+
+RESOURCES/LINKS:
+https://cwiki.apache.org/confluence/display/Hive/Home
+
+https://www.tutorialscampus.com/tutorials/hive/create-table.htm
+
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL
+
+
+HIVE:
+
+hive> CREATE TABLE IF NOT EXISTS hr(EmpID string, DeptID string, Salary string, StartDate string, Manager string, DeptName string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+
+
+hive> LOAD DATE LOCAL INPATH '/home/field/hr.csv' OVERWRITE INTO TABLE hr;
+
+
+
+hive> CREATE TABLE IF NOT EXISTS employee(ID string,First_name string,Last_name string,Address string,City string,Phone string,Email string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+
+
+
+hive> LOAD DATA LOCAL INPATH '/home/field/employee.csv' OVERWRITE INTO TABLE employee;
+
