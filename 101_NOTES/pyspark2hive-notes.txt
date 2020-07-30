@@ -1,0 +1,9 @@
+# Notes on bridge b/w PySpark/PySpark shell and Hive
+
+To connect Spark/PySpark to Hive database, it cannot be set nor retrieved through Python/Scala/Java code but must be done through shared hive-site.xml.
+
+Simply copy hive/conf/hive-site.xml to spark/conf directory!
+
+
+
+
