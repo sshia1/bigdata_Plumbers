@@ -1,0 +1,13 @@
+# notes for running kafka on UBUNTU
+
+1. run ZooKeeper FIRST
+
+zookeeper-server-start.sh -daemon /home/field/opt/kafka_2.12-2.0.0/config/zookeeper.properties
+
+2. THEN START KAFKA SERVER!
+
+kafka-server-start.sh opt/kafka_2.12-2.0.0/config/server1.properties
+
+3. OPEN ANOTHER TERMINAL and RUN PRODUCER, CONSUMER!
+
+

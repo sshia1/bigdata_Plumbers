@@ -1,1 +1,10 @@
-Notes on PySpark
+# Notes on PySpark
+
+
+1. to run pySpark program from command line
+
+
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.4.4 kafka2spark-consumer.py
+
+2. run consumer FIRST, then producer
+

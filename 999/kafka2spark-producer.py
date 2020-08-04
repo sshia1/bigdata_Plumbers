@@ -1,3 +1,4 @@
+#
 # this program is designed to be run from console after ZooKeeper &
 # Kafka are already launched
 #
@@ -12,13 +13,13 @@ topicName		= 'kafkaRapidAPISpark' #'First_Topic'
 pObj			= KafkaProducer(bootstrap_servers=bootstrap_servers, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 url			= "https://covid-193.p.rapidapi.com/statistics"
 headers		= {
-				'x-rapidapi-host': "covid-193.p.rapidapi.com",
-				'x-rapidapi-key': ""
 }
 
 
 def reformat_json(newDict):
 	list_dict = {}
+	l=[]
+	i=0
 	for entry in newDict["response"]:
 		country	=entry["country"]
 		if not(country in ["get","parameters","results","errors","response"]):
@@ -55,9 +56,20 @@ def reformat_json(newDict):
 			if deaths_total is None:
 				deaths_total = 0
 			if tests_total is None:
-				tests_total = 0	
-			list_dict[country]={"continent":continent,"population":population,"cases":cases_total,"deaths":deaths_total,"tests":tests_total}
-	return(list_dict)
+				tests_total = 0
+			c = country	
+			c = "{" + '"' + "COUNTRY" + '"' + ":" + '"' + country + '"' + "}"
+			#list_dict[c]
+			l.append({"country":country,"continent":continent,"population":population,"cases":cases_total,"deaths":deaths_total,"tests":tests_total})
+			#d= {"country":country,"continent":continent,"population":population,"cases":cases_total,"deaths":deaths_total,"tests":tests_total}
+			#l.append({"entry":d})
+			
+			i += 1
+			#if (i >= 10):
+			#	break
+	#return(list_dict)
+	return(l)
+	#return({"data":l})
 
 
 def dump_json(dict):
@@ -78,13 +90,16 @@ i=1
 while True:
 	response = requests.request("GET", url, headers=headers) # Get RapidAPI COVID-10 statistics
 	jDict    = response.json()                               # convert to json 
+	#jDict=response.text
 	print("Sent:>>>>>>>>>>>>")
 	#print(jDict)
 	new_dict = reformat_json(jDict)
-	dump_json(new_dict)
+	#new_dict = jDict
+	#dump_json(new_dict)
+	print(new_dict)
 	print("<<<<<<<<<<<<<<<<<")
 	pObj.send(topicName, new_dict)
-	time.sleep(1)
+	time.sleep(5)
 	i += 1
 	if (i>=1000):
 		break
