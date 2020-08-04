@@ -3,6 +3,16 @@
 # with Kafka producer running from another console
 # independently
 #
+# data is received from Kafka producer which uses PySpark session as 
+# a bridge to connect to Hive and write to it.
+#
+# Data is sent one record at a time which is appended to the database table.
+#
+# Lacks logic to handle to continually go to new Hive tables to avoid
+# duplicate keys.
+#
+# POC only.
+#
                                                                              
 
 from pyspark.streaming.kafka	import KafkaUtils
@@ -31,10 +41,6 @@ kvs = KafkaUtils.createStream(ssc, 'localhost:2181', 'spark-streaming-consumer',
 
 
 
-dataTuple=namedtuple('schema', ['country','continent','population','cases','deaths','tests']) # column header for schema
-
-
-
 result1 = kvs.map(lambda x: x[1]) # get rid of junk at x[0] due to kafka
 
 
@@ -43,10 +49,17 @@ result2=result1.map(lambda rec: json.loads(rec.decode('utf-8'))) # deserialize o
 
 
 
-def diag(rec):
-	
+#def convert2tuple(rec): # lambda function to convert to namedtuple for schema
+#	final_list=[]
+#	for entry in rec:
+#		namedTupleObj=dataTuple(**entry)
+#		final_list.append(namedTupleObj)
+#	return(final_list)
 
-	return(rec))
+
+def diag(rec):
+	dataTuple=namedtuple('schema', ['country','continent','population','cases','deaths','tests'])
+	return(dataTuple(rec['country'], rec['continent'], rec['population'], rec['cases'], rec['deaths'], rec['tests']))
 
 
 result3=result2.map(lambda rec: diag(rec))
@@ -68,13 +81,11 @@ def handle_rdd(rdd):
 		# print("AFTER CREATE-DATA-FRAME!!!!!!!!!!!!!!!!!!!!!!!!!")   
 		                                
 		print(">>>>BEFORE HIVE TABLE SAVE ************************************************************")
-		#df.printSchema()
-		print("========================================================================================")
 		df.show()                                                                              
 		print("******************************************************************************<<<<<<<<<")    
 		
 		                     
-		# df.write.saveAsTable(name='default.covid19', format='hive', mode='append')                  
+		df.write.saveAsTable(name='default.covid19', format='hive', mode='append')                  
 
                                                            
                                                                              
